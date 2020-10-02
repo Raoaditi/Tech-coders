@@ -7,66 +7,60 @@
     <title>Store</title>
   </head>
   <body>
-    <section class="container content-section">
-        <h2 class="section-header">Food</h2>
-        <div class="shop-items">
-          <div class="shop-item">
-            <span class="shop-item-title">Item 1</span>
-            <img class="shop-item-image" src="item-1.jpg">
-            <div class="shop-item-details">
-              <span class="shop-item-price">$12.9</span>
-              <button class="btn btn-primary shop-item-button" type="button" name="button">ADD TO CART</button>
-            </div>
-          </div>
-        </div>
-        <div class="shop-items">
-          <div class="shop-item">
-            <span class="shop-item-title">Item 2</span>
-            <img class="shop-item-image" src="item-1.jpg">
-            <div class="shop-item-details">
-              <span class="shop-item-price">$17.8</span>
-              <button class="btn btn-primary shop-item-button" type="button" name="button">ADD TO CART</button>
-            </div>
-          </div>
-        </div>
-        <div class="shop-items">
-          <div class="shop-item">
-            <span class="shop-item-title">Item 3</span>
-            <img class="shop-item-image" src="item-1.jpg">
-            <div class="shop-item-details">
-              <span class="shop-item-price">$10.2</span>
-              <button class="btn btn-primary shop-item-button" type="button" name="button">ADD TO CART</button>
-            </div>
-          </div>
-        </div>
-        <div class="shop-items">
-          <div class="shop-item">
-            <span class="shop-item-title">Item 4</span>
-            <img class="shop-item-image" src="item-1.jpg">
-            <div class="shop-item-details">
-              <span class="shop-item-price">$9.3</span>
-              <button class="btn btn-primary shop-item-button" type="button" name="button">ADD TO CART</button>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- Temporary Nav -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="store.html">Menu</a>
+      <a href="reservation.html">Link-3</a>
+    </nav>
+
 
       <!-- TOTAL -->
 
-      <section class="container content-section">
-        <h2 class="section-header">CART</h2>
-        <div class="cart-row">
-          <span class="cart-item cart-header cart-column">ITEM</span>
-          <span class="cart-price cart-header cart-column">PRICE</span>
-          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      <div class="row">
+        <div class="col-9">
+          <section class="container content-section">
+              <h2 class="section-header">Menu</h2><div class="section-hr">
+
+              </div>
+              <!-- <hr class="section-hr"/> -->
+              <div class="shop-items row">
+                <div class="shop-item col-4">
+                  <span class="shop-item-title">Fish-eye Soup</span>
+                  <!-- <img class="shop-item-image" src="item-1.jpg"> -->
+                  <p class="shop-item-description">It's  prepared as a cream-based soup with tofu and black olives which look as fish-eye</p>
+                  <div class="shop-item-details">
+                    <span class="shop-item-price">$12.9</span>
+                    <button class="btn btn-primary shop-item-button" type="button" name="button">ADD TO CART</button>
+                  </div>
+                </div>
+              </div>
+            </section>
         </div>
-        <div class="cart-items"></div>
-        <div class="cart-total">
-          <strong class="cart-total-title">Total</strong>
-          <span class="cart-total-price">$0</span>
+        <div class="col-3">
+          <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+              <span class="cart-item cart-header cart-column">ITEM</span>
+              <span class="cart-price cart-header cart-column">PRICE</span>
+              <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+
+              <div class="cart-items"></div>
+              <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+              </div>
+              <button class="btn btn-primary btn-purchase" type="button" name="button">PURCHASE</button>
+          </section>
         </div>
-        <button class="btn btn-primary btn-purchase" type="button" name="button">PURCHASE</button>
-      </section>
+      </div>
+
+
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; Copyright 3020</p>
+      </div>
   </body>
 </html>
 

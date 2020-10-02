@@ -1,40 +1,72 @@
 body {
   margin: 0;
-  background-image: url('../images/header-1.jpg');
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('../images/header-2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: Arial, Helvetica, sans-serif;
 }
+*{ box-sizing: border-box;}
+/* header */
+h2{margin: 0;}
+/* responsive grid */
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
 .header-text {
   color: #fff;
   text-align: center;
+  font-family: 'Bungee', cursive;
   z-index: 10;
+  letter-spacing: 0.5em;
+  font-size: 3em;
+  text-shadow: 2px 2px #4B0082;
 }
 
-.container {
+.header-container {
   padding: 2em;
   height: 100vh;
   position: relative;
-  margin: 5%;
 }
 
 /* GENERAL BUTTON STYLING */
 @media only screen and (max-width: 600px){
-  button{
+  button.header-btn{
     display: block !important;
     margin: 5% auto !important;
   }
 }
-button,
-button::after {
+button.header-btn,
+.header-btn::after {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-button {
+button.header-btn {
   background: none;
   width: 14em;
   border: 3px solid #fff;
@@ -48,27 +80,33 @@ button {
   position: relative;
   text-transform: uppercase;
 }
-
-button::before,
-button::after {
+.header-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.header-btn a:hover {
+  color: #4B0082;
+}
+button.header-btn::before,
+button.header-btn::after {
   background: #fff;
   content: '';
   position: absolute;
   z-index: -1;
 }
 
-button:hover {
+button.header-btn:hover {
   color: #4B0082;
 }
 
-.btn::after {
+.header-btn::after {
   height: 100%;
   left: 0;
   top: 0;
   width: 0;
 }
 
-.btn:hover:after {
+.header-btn:hover:after {
   width: 100%;
 }
 
@@ -80,5 +118,36 @@ button:hover {
   width: 100%;
   color: white;
   text-align: center;
+  font-size: 1em;
+}
+
+
+
+
+
+
+/* Order */
+.content-section{
+  width: 80%;
+  background-color: #262626;
+  margin: auto;
+  color: #f0f0f0;
+}
+.section-header{
+  font-size: 2em;
+  padding-top: 0.5em;
+  text-align: center;
+}
+.section-hr{
+  width: 3em;
+  height: 4px;
+  background-color: #FFB140;
+  margin: auto;
+  border-radius: 20px;
+}
+.shop-item{
+  text-align: center;
+}
+.shop-item-title{
   font-size: 24px;
 }
