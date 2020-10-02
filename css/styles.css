@@ -19,6 +19,12 @@ body {
 }
 
 /* GENERAL BUTTON STYLING */
+@media only screen and (max-width: 600px){
+  button{
+    display: block !important;
+    margin: 5% auto !important;
+  }
+}
 button,
 button::after {
   -webkit-transition: all 0.3s;
@@ -33,7 +39,7 @@ button {
   border: 3px solid #fff;
   border-radius: 5px;
   color: #fff;
-  display: inline;
+  display: inline-block;
   font-size: 1em;
   font-weight: bold;
   margin: 5% 1% 2% 5%;
