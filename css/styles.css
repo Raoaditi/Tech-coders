@@ -11,6 +11,16 @@ body {
 /* header */
 h2{margin: 0;}
 /* responsive grid */
+
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col{
   position: relative;
   width: 100%;
@@ -259,10 +269,15 @@ button.header-btn:hover {
 }
 
 /* Order */
-.content-section{
+.modal-content-section{
+  color:#313131;
   width: 80%;
   margin: auto;
-  color: #f0f0f0;
+}
+.content-section{
+  color: #fff;
+  width: 80%;
+  margin: auto;
 }
 .section-header{
   font-size: 2em;
@@ -298,6 +313,25 @@ button.header-btn:hover {
   margin-top: -15px;
   position: relative;
   top: 400px;
+}
+.btn-danger{
+  color: #ffff;
+  background-color: #FF3232;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+}
+.cart-quantity-input{
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #333
+}
+.btn-purchase{
+    color: #ffff;
+    background-color: #4B0082;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 /* Modal */
