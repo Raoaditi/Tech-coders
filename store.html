@@ -10,31 +10,19 @@
 </head>
 
 <body>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="#">Menu</a>
-      <a href="store.html">Order</a>
-    </nav>
- <div class="row">
-      <div class="col-9">
-        <section class="container content-section">
-          <h2 class="section-header">Category-1</h2>
-          <div class="section-hr">
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="#">Menu</a>
+    <a href="store.html">Order</a>
 
-          </div>
-          <div class="shop-items row">
-            <div class="shop-item col-4">
-              <span class="shop-item-title">Fish-eye Soup</span>
-              <p class="shop-item-description">It's prepared as a cream-based soup with tofu and black olives which look as fish-eye</p>
-              <div class="shop-item-details">
-                <span class="shop-item-price">$12.9</span>
-                <button class="btn btn-primary shop-item-button" type="button" name="button">ADD TO CART</button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="col-3">
+
+    <!-- Trigger/Open The Modal -->
+    <a class="shopping-cart-icon" id="myBtn"><i class="fas fa-shopping-cart"></i></a>
+
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
         <section class="container content-section">
           <h2 class="section-header"><i class="fas fa-shopping-cart"></i>CART</h2>
           <div class="cart-row">
@@ -48,29 +36,67 @@
               <span class="cart-total-price">$0</span>
             </div>
             <button class="btn btn-primary btn-purchase" type="button" name="button">PURCHASE</button>
-        </section>
+
+            </section>
       </div>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col">
+      <section class="container content-section">
+        <h2 class="section-header">Category-1</h2>
+        <div class="section-hr">
+
+        </div>
+        <div class="shop-items row">
+          <div class="shop-item col-4">
+            <span class="shop-item-title">Fish-eye Soup</span>
+            <img class="shop-item-img" src="images/crab.png" alt="">
+            <p class="shop-item-description">It's prepared as a cream-based soup with tofu and black olives which look as fish-eye</p>
+            <div class="shop-item-details">
+              <span class="shop-item-price">$12.9</span>
+              <button class="btn btn-primary shop-item-button" type="button" name="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- Footer -->
     <div class="footer">
       <p>&copy; Copyright 3020</p>
     </div>
   </div>
 
+
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
 </body>
 
 </html>
-
-
-<!-- resident ebil
-walking dead
-altered carbon
-death standing (m)
-
-Jelly-fish broth
-Azimithluie
-UV Fried
-UV Baked Cake
-The Mind Flayer Pizza -->
-
-
-<!-- HOTEL IMG- DINER   https://unsplash.com/photos/2qBInlIcCTk -->
