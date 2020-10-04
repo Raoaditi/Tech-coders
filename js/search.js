@@ -68,7 +68,6 @@ function search() {
 
   } else {
     document.getElementById('no-dish').style.display = 'none';
-
   }
 
   boom();
