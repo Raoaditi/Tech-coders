@@ -266,7 +266,7 @@ button.header-btn:hover {
 /* Order */
 .modal-content-section {
   color: #313131;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -352,9 +352,11 @@ button.shop-item-button:hover {
 }
 
 .cart-quantity-input {
-  padding: 10px;
-  border-radius: 3px;
-  border: 1px solid #333
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: 1px solid #333;
+    width: 20px;
 }
 
 .btn-purchase {
@@ -385,7 +387,7 @@ button.shop-item-button:hover {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  width: 80%;
+  width: 350px;
 }
 
 /* The Close Button */
@@ -626,9 +628,36 @@ span.shop-item-mainprice {
   transition: 0.3s all !Important;
   border-radius: 2px;
 }
+.feedback-button:hover {
+  cursor: pointer;
+}
 
+.team-img {
+    justify-content: center;
+    display: flex;
+}
+.team-name {
+    text-align: center;
+    font-size: 32px;
+}
+span.desc {
+    font-size: 18px;
+}
 
-
+h1.contact-headershadow {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 60px;
+    color: rgba(255,255,255,0.1);
+    margin-top: -40px;
+}
+textarea {
+    width: 100%;
+    background: #1a1a1a;
+    border: 0px;
+    color: #ddd;
+    border-radius: 2px !important;
+}
 td{
   min-width: 7em;
 }
