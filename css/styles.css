@@ -385,14 +385,14 @@ button.shop-item-button:hover {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  width: 50%;
+  width: 80%;
 }
 
 /* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 4em;
   font-weight: bold;
 }
 
@@ -405,9 +405,12 @@ button.shop-item-button:hover {
 
 .shopping-cart-icon {
   float: right;
-  font-size: 4em;
+  font-size: 2em;
+  color: #fff;
 }
-
+.shopping-cart-icon:hover {
+  cursor: pointer;
+}
 .d-none {
   display: none;
   text-align: center;
@@ -622,4 +625,10 @@ span.shop-item-mainprice {
   font-weight: 900;
   transition: 0.3s all !Important;
   border-radius: 2px;
+}
+
+
+
+td{
+  min-width: 7em;
 }
