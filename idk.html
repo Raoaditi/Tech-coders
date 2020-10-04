@@ -7,19 +7,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
   <title>Yanme'e Kitchen</title>
   <script src="js/store.js" async></script>
-  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
   <script src="https://kit.fontawesome.com/06c4095869.js" crossorigin="anonymous"></script>
-  <script src="js/search.js" charset="utf-8"></script>
 </head>
 
 <body>
 
   <!-- Header -->
   <section class="header">
-
     <nav class="navbar">
-
-      <!-- Shopping Cart -->
       <a class="shopping-cart-icon" id="myBtn"><i class="fas fa-shopping-cart"></i></a>
 
 
@@ -51,87 +46,61 @@
         <!-- <button class="header-btn"><a href="#">Link-3</a></button> -->
       </div>
 
-
-
   </section>
-  <section class="dishes">
+  <section class="pop-dishes">
     <img class="dishes-img" src="images/zig-zag.png" alt="">
-    <div class="dishes-container">
-
+    <div class="pop-dishes-container">
       <div class="row">
+        <div class="col">
+          <section class="container content-section">
+            <h2 class="section-header">Category-1</h2>
+            <div class="section-hr"></div>
+            <div class="shop-items row">
 
-        <section class="container content-section">
-          <h2 class="section-header">Menu</h2>
-          <div class="section-hr"></div>
-
-          <!-- SearchBar -->
-          <div class="search-container">
-            <input type="text" class="search-dishes" placeholder="Search Dishes" id="search-box" onkeyup="search();" onchange="search();" list="searches">
-            <datalist id="searches">
-              <option value="Grab&Crab"></option>
-              <option value="Acrod Khalo"></option>
-              <option value="P-Blood Cheesecake"></option>
-            </datalist>
-          </div>
-
-          <div class="shop-items row">
-
-            <div class="col-12 text-center d-none" id="no-dish">
-              <h4>Sorry! No such dish/dishes available.</h4>
-            </div>
-
-
-            <div class="shop-item col-3">
-              <div class="search-opt" a="grab and crab, grab&crab, grab & crab, crab, grab">
-                <span class="shop-item-title">Grab&Crab</span>
-                <img class="shop-item-image" src="images/crab.png" alt="">
+              <div class="shop-item col-3">
+                <span class="shop-item-title">Fish-eye Soup</span>
+                <img class="shop-item-img" src="images/crab.png" alt="">
                 <p class="shop-item-description">It's prepared as a cream-based soup with tofu and black olives which look as fish-eye</p>
                 <div class="shop-item-details">
                   <span class="shop-item-price">$12.9</span>
-                  <button class="shop-item-button" type="button" name="button">ADD TO CART</button>
+                  <button class="btn btn-primary shop-item-button" type="button" name="button">ADD TO CART</button>
                 </div>
               </div>
-            </div>
 
-
-            <div class="shop-item col-3">
-              <div class="search-opt" a="acrod">
-                <span class="shop-item-title">Acrod</span>
-                <img class="shop-item-image" src="images/acrod.png" alt="">
+              <div class="shop-item col-3">
+                <span class="shop-item-title">Acrod Khalo</span>
+                <img class="shop-item-img" src="images/acrod.png" alt="">
                 <p class="shop-item-description">It's prepared as a cream-based soup with tofu and black olives which look as fish-eye</p>
                 <div class="shop-item-details">
-                  <span class="shop-item-price">$15.9</span>
-                  <button class="shop-item-button" type="button" name="button">ADD TO CART</button>
+                  <span class="shop-item-price">$10.9</span>
+                  <button class="btn btn-primary shop-item-button" type="button" name="button">ADD TO CART</button>
                 </div>
               </div>
-            </div>
 
-
-            <div class="shop-item col-3">
-              <div class="search-opt" a="Cockroach Blood Cheesecake, cockroach, blood, cheesecake">
-                <span class="shop-item-title">P-Blood Cheesecake</span>
-                <img class="shop-item-image" src="images/cake.png" alt="">
+              <div class="shop-item col-3">
+                <span class="shop-item-title">Cockroach Blood Cheesecake</span>
+                <img class="shop-item-img" src="images/cake.png" alt="">
                 <p class="shop-item-description">It's prepared as a cream-based soup with tofu and black olives which look as fish-eye</p>
                 <div class="shop-item-details">
                   <span class="shop-item-price">$9.9</span>
-                  <button class="shop-item-button" type="button" name="button">ADD TO CART</button>
+                  <button class="btn btn-primary shop-item-button" type="button" name="button">ADD TO CART</button>
                 </div>
               </div>
+
             </div>
-
-          </div>
-        </section>
-
+          </section>
+        </div>
       </div>
     </div>
   </section>
   <!-- Footer -->
-  <div class="footer" id="full-footer">
+  <div class="footer">
     <p>&copy; Copyright 3020</p>
   </div>
 
 
   <script>
+
     var modal = document.getElementById("myModal");
 
     var btn = document.getElementById("myBtn");
@@ -157,3 +126,9 @@
 </body>
 
 </html>
+
+
+<!-- To-do:
+remove bootstrap.css
+
+ -->
