@@ -65,8 +65,10 @@ function search() {
 
   if (s_count == 0) {
     document.getElementById('no-dish').style.display = 'block';
+
   } else {
     document.getElementById('no-dish').style.display = 'none';
+
   }
 
   boom();
